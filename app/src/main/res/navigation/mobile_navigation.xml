@@ -3,23 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
-
+    app:startDestination="@id/navigation_inicio2">
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="luis.escalante.labluisin.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
-
+        android:id="@+id/navigation_inicio2"
+        android:name="luis.escalante.labluisin.navigation_inicio"
+        android:label="fragment_navigation_inicio"
+        tools:layout="@layout/fragment_navigation_inicio" />
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="luis.escalante.labluisin.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
-
+        android:id="@+id/navigation_perfil"
+        android:name="luis.escalante.labluisin.navigation_perfil"
+        android:label="fragment_navigation_perfil"
+        tools:layout="@layout/fragment_navigation_perfil" />
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="luis.escalante.labluisin.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_info"
+        android:name="luis.escalante.labluisin.navigation_info"
+        android:label="fragment_navigation_info"
+        tools:layout="@layout/fragment_navigation_info" />
+    <fragment
+        android:id="@+id/navigation_contactanos"
+        android:name="luis.escalante.labluisin.navigation_contactanos"
+        android:label="fragment_navigation_contactanos"
+        tools:layout="@layout/fragment_navigation_contactanos" />
 </navigation>
